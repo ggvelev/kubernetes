@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configurable-override-lab
+  labels: 
+    kubernetes.courselabs.co: configmaps
+    app: configurable
+data:
+  override.json: |-
+    {
+      "Features" : {
+        "DarkMode" : false,
+      }
+    }

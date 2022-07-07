@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configurable-env-lab
+  labels: 
+    kubernetes.courselabs.co: configmaps
+    app: configurable
+data:
+  Configuration__Release: 21.04-lab
+  Configurable__Release: 200.01.2
+  Configurable__Environment: bop
