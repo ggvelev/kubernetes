@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: whoami-lb-multimatch
+  labels:
+    kubernetes.courselabs.co: services
+    app: whoami
+spec:
+  selector:
+    app: whoami
+    label: willmatch
+  ports:
+    - name: http
+      port: 8082
+      targetPort: 80
+  type: LoadBalancer

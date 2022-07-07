@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bad-sleep
+spec:
+  containers:
+    - name: bad-sleep
+      image: courselabs/bad-sleep
