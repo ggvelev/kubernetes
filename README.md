@@ -835,3 +835,15 @@ restart the app pod and get the new config read.
 
 [Docs](labs/namespaces/README.md)
 
+    2  k get ns
+    3  k get
+    4  k get pods
+    5  k get pods -n kube-system
+    6  k create namespace zhrx
+    7  k describe ns zhrx
+    8  kubectl logs -l k8s-app=kube-dns -n kube-system
+    9  kubectl get contexts
+    10  kubectl config get-contexts
+    11  k get nodes
+    12  k get nodes -o wide
+    13  k node
